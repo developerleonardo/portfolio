@@ -9,8 +9,8 @@ module.exports = {
     colors: {
       ...colors,
       "primary": "#00F7FF",
-      "secondary": "#23CFD5"
-      
+      "secondary": "#23CFD5",
+      "tertiary": "#407D80"
     },
     extend: {
       backgroundImage: {
@@ -24,6 +24,7 @@ module.exports = {
         "css-logo": "url('../img/css-logo.svg')",
         "html-logo": "url('../img/html-logo.svg')",
         "git-logo": "url('../img/git-logo.svg')",
+        "linkedin-logo": "url('../img/linkedin-logo.svg')",
       }
     },
   },

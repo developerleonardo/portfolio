@@ -13,12 +13,21 @@
 </head>
 
 <body class="bg-black font-serif">
-    <nav class="bg-black w-full fixed z-10 top-0 text-white p-4 flex justify-end">
+    <nav class="bg-black w-full fixed z-10 top-0 text-white p-4 flex justify-between">
+        <div class="flex gap-2 justify-center items-center">
+            <p class="mr-2 font-bold text-primary">Portfolio</p>
+            <div class="p-1 border border-tertiary rounded-lg flex items-center justify-center bg-tertiary">
+                <img src="../img/language-logo.svg" alt="language icon" class="w-5 h-5">
+                <select name="language" class="bg-tertiary text-sm font-light text-center">
+                    <option value="eng">English</option>
+                    <option value="spa">Spanish</option>
+                </select>
+            </div>
+        </div>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-8 h-8">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
-
     </nav>
 
     <div class="w-full h-screen flex flex-col items-center justify-between">
@@ -26,9 +35,11 @@
         <section class="text-white flex flex-col items-center justify-center w-56 mt-20">
             <h1 class="font-bold text-xl">Hi, I'm <span class="text-primary">Leonardo</span></h1>
             <p class="font-light text-sm text-gray-100">Frontend Developer</p>
-            <p class="mt-4 text-sm font-light text-center">Based in Medellin, Colombia. I'm passionate about creating and coding beautiful and unique websites</p>
-            <a href="/" class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Download CV <svg
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            <p class="mt-4 text-sm font-light text-center">Based in Medellin, Colombia. I'm passionate about creating
+                and coding beautiful and unique websites</p>
+            <a href="/"
+                class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Download
+                CV <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6 ml-2">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
@@ -41,7 +52,7 @@
                 alt="profile picture of me">
         </figure>
         <button class="w-40 h-10 bg-primary font-bold rounded-lg">See my projects</button>
-        
+
         <section class="mt-2 w-full flex flex-col items-center p-8">
             <h2 class="text-primary font-bold text-lg">Technologies</h2>
             <div class="grid grid-cols-4 w-full place-content-center gap-2 mt-4">
@@ -80,6 +91,87 @@
             </div>
         </section>
     </div>
+
+    <section class="w-full h-auto flex flex-col items-center">
+        <h2 class="text-primary font-bold text-lg mt-20">About Me</h2>
+        <p class="text-white mt-4 text-sm font-light text-center px-8">I'm a Colombian developer who loves learning new
+            things everyday. I'm actually studying Frontend development on the Platzi platform and I also won a
+            schoolarship at Oracle Next Education to study Java, Spring and a course on soft skills. I love animals and
+            I have a strong and professional knowledge on this area. During my free time I like playing musical
+            instruments and running</p>
+    </section>
+
+    <section class="w-full h-auto flex flex-col items-center">
+        <h2 class="text-primary font-bold text-lg mt-20">Projects</h2>
+        <div class="flex flex-col w-full p-8">
+            <img src="../img/Shopi-home.png" alt="An image of the homepage of Shopi"
+                class="w-full border-t border-t-primary pt-4">
+            <div class="mt-4">
+                <h3 class="text-primary font-semibold text-center">1. Shopi</h3>
+                <p class="text-white mt-4 text-sm font-light text-center">This is an ecommerce website and it was
+                    builded with React Vite.js and
+                    the style was done with TailwindCSS. This website is using a fake API and you can see all the
+                    products on it. Also it is possible to filter the products by category and by name. To navigate
+                    through all the application you should sign up by using any username and any email. For example you
+                    can type Michael and username@example.com.
+                    After doing this you can explote all the features of this project. IMPORTANT: once you open the
+                    demo, click on the menu and then click on sign in.
+                    For more information please visit the repo and follow the instructions
+                </p>
+                <div class="flex items-center justify-center gap-6">
+                    <a href="https://developerleonardo.github.io/Shopi/"
+                        class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Demo</a>
+                    <a href="https://github.com/developerleonardo/Shopi"
+                        class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Repo</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col w-full p-8">
+            <img src="../img/TODO-MACHINE.png" alt="An image of the homepage of Shopi"
+                class="w-full border-t border-t-primary pt-4">
+            <div class="mt-4">
+                <h3 class="text-primary font-semibold text-center">2. Todo Machine</h3>
+                <p class="text-white mt-4 text-sm font-light text-center">TODO MACHINE is an app created with React.js
+                    that let you create a list of task about your
+                    daily life. You can add a new task and once you complete it you can either marke it as completed or
+                    you can delete it and add a new task. You will only need to write your daily To-Do itinerary and you
+                    will not miss anything at the end of the day/month
+                </p>
+                <div class="flex items-center justify-center gap-6">
+                    <a href="https://developerleonardo.github.io/curso-react-intro/"
+                        class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Demo</a>
+                    <a href="https://github.com/developerleonardo/curso-react-intro"
+                        class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Repo</a>
+                </div>
+            </div>
+            <div class="flex flex-col w-full p-8">
+                <img src="../img/Platzi-travel.png" alt="An image of the homepage of Shopi"
+                    class="w-full border-t border-t-primary pt-4">
+                <div class="mt-4">
+                    <h3 class="text-primary font-semibold text-center">3. Platzi Travel</h3>
+                    <p class="text-white mt-4 text-sm font-light text-center">This is a project builded using Tailwind
+                        CSS.This project also has a feature in which you can change to dark mode just by clicking in the
+                        icon of the moon.
+                        Tailwind is a framework based in the concept of mobile first. And of course this project was
+                        builed carefully thinking about how it may look in a phone screen
+                    </p>
+                    <div class="flex items-center justify-center gap-6">
+                        <a href="https://developerleonardo.github.io/Curso-tailwind/"
+                            class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Demo</a>
+                        <a href="https://github.com/developerleonardo/Curso-tailwind"
+                            class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Repo</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="w-full h-40 bg-tertiary flex flex-col justify-center gap-2 px-8">
+        <h3 class="text-white font-medium">Contact me</h3>
+        <a href="https://www.linkedin.com/in/leonardo-salazar-serna/"><img src="../img/linkedin-logo.svg"
+                alt="linkedin logo" class="w-10 h-10 flex gap-2"></a>
+        <p class="text-white mt-4 text-sm font-light text-center">Or visit
+            https://www.linkedin.com/in/leonardo-salazar-serna/</p>
+    </footer>
 </body>
 
 </html>
