@@ -10,7 +10,8 @@ module.exports = {
       ...colors,
       "primary": "#00F7FF",
       "secondary": "#23CFD5",
-      "tertiary": "#407D80"
+      "tertiary": "#407D80",
+      "tabBar": "#ffffff08"
     },
     extend: {
       backgroundImage: {
