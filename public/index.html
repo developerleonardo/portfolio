@@ -16,6 +16,13 @@
     <header>
         <nav class="bg-black w-full fixed z-10 top-0 text-white p-4 flex justify-between">
             <p class="mr-2 font-bold text-primary">Portfolio</p>
+            <div class="hidden lg:flex font-bold text-primary">
+                <ul class="flex gap-16">
+                    <a href="#section-home" class="cursor-pointer">Home</a>
+                    <a href="#section-projects" class="cursor-pointer">Projects</a>
+                    <a href="#section-contact" class="cursor-pointer">Contact</a>
+                </ul>
+            </div>
             <div class="p-1 border border-tertiary rounded-lg flex items-center justify-center bg-tertiary">
                 <img src="../img/language-logo.svg" alt="language icon" class="w-5 h-5">
                 <select id="select-language" name="language" class="bg-tertiary text-sm font-light text-center">
@@ -26,16 +33,18 @@
         </nav>
     </header>
 
-    <div id="section-home" class="w-full h-screen flex flex-col items-center justify-between">
-        <section class="text-white flex flex-col items-center justify-center w-56 mt-20">
+    <div id="section-home"
+        class="w-full h-screen flex flex-col items-center justify-between lg:flex-row lg:m-auto max-w-screen-2xl">
+        <section class="text-white flex flex-col items-center justify-center w-56 mt-20 md:w-full lg:w-1/3 lg:h-full">
             <div class="flex gap-2 items-center justify-center">
-                <h1 class="font-bold text-xl" data-section="profile" data-value="greeting">Hi, I'm </h1>
-                <span class="text-primary font-bold text-xl" data-section="profile" data-value="name">Leonardo</span>
+                <h1 class="font-bold text-xl lg:text-3xl" data-section="profile" data-value="greeting">Hi, I'm </h1>
+                <span class="text-primary font-bold text-xl lg:text-3xl" data-section="profile"
+                    data-value="name">Leonardo</span>
             </div>
-            <p class="font-light text-sm text-gray-100" data-section="profile" data-value="rol">Frontend Developer</p>
-            <p class="mt-4 text-sm font-light text-center" data-section="profile" data-value="description">Based in
-                Medellin, Colombia. I'm passionate about creating
-                and coding beautiful and unique websites</p>
+            <p class="font-light text-sm text-gray-100" data-section="profile" data-value="rol">Frontend Developer
+            </p>
+            <p class="mt-4 text-sm font-light text-center lg:text-lg" data-section="profile" data-value="description">
+                Based in Medellin, Colombia. I'm passionate about creating and coding beautiful and unique websites</p>
             <a href="/"
                 class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center"
                 data-section="cv" data-value="download">Download CV <svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -46,52 +55,72 @@
             </a>
         </section>
 
-        <figure class="w-40 h-40 rounded-full mt-8">
-            <img class="rounded-full w-full h-full object-cover object-top" src="../img/ProfilePictureMobile.jpg"
-                alt="profile picture of me">
+        <figure class="w-40 h-40 rounded-full mt-8 md:w-60 md:h-60 lg:w-1/3 lg:flex lg:justify-center lg:items-center">
+            <img class="rounded-full w-full h-full object-cover object-top lg:hidden"
+                src="../img/ProfilePictureMobile.jpg" alt="profile picture of me">
+            <img class="hidden lg:flex" src="../img/profilePicture.png" alt="profile picture of me">
         </figure>
 
-        <section class="w-full flex flex-col items-center p-8">
-            <h2 class="text-primary font-bold text-lg" data-section="technologies" data-value="technologies-title">
-                Technologies</h2>
-            <div class="grid grid-cols-4 w-full place-content-center gap-2 my-6">
-                <div class="grid place-content-center place-items-center">
-                    <img src="../img/react-logo.svg" alt="react logo" class="w-10 h-10 mt-4">
-                    <p class="text-white">React.js</p>
+        <section class="w-full flex flex-col items-center p-8 lg:w-1/3">
+            <div>
+                <h2 class="text-primary font-bold text-lg lg:text-center" data-section="technologies"
+                    data-value="technologies-title">
+                    Technologies</h2>
+                <div class="grid grid-cols-4 w-full place-content-center gap-2 my-6">
+                    <div class="grid place-content-center place-items-center">
+                        <img src="../img/react-logo.svg" alt="react logo" class="w-10 h-10 mt-4">
+                        <p class="text-white">React.js</p>
+                    </div>
+                    <div class="grid place-content-center place-items-center">
+                        <img src="../img/javascript-logo.svg" alt="javascript logo" class="w-10 h-10 mt-4">
+                        <p class="text-white">javascript</p>
+                    </div>
+                    <div class="grid place-content-center place-items-center">
+                        <img src="../img/vite-logo.svg" alt="Vite logo" class="w-10 h-10 mt-4 text-white">
+                        <p class="text-white">Vite</p>
+                    </div>
+                    <div class="grid place-content-center place-items-center">
+                        <img src="../img/tailwind-logo.svg" alt="TailwindCss logo" class="w-10 h-10 mt-4 text-white">
+                        <p class="text-white">TailwindCSS</p>
+                    </div>
+                    <div class="grid place-content-center place-items-center">
+                        <img src="../img/sass-logo.svg" alt="Sass logo" class="w-10 h-10 mt-4 text-white">
+                        <p class="text-white">Sass</p>
+                    </div>
+                    <div class="grid place-content-center place-items-center">
+                        <img src="../img/css-logo.svg" alt="CSS logo" class="w-10 h-10 mt-4 text-white">
+                        <p class="text-white">CSS3</p>
+                    </div>
+                    <div class="grid place-content-center place-items-center">
+                        <img src="../img/html-logo.svg" alt="html logo" class="w-10 h-10 mt-4 text-white">
+                        <p class="text-white">HTML5</p>
+                    </div>
+                    <div class="grid place-content-center place-items-center">
+                        <img src="../img/git-logo.svg" alt="github logo" class="w-10 h-10 mt-4 text-white">
+                        <p class="text-white">Github</p>
+                    </div>
                 </div>
-                <div class="grid place-content-center place-items-center">
-                    <img src="../img/javascript-logo.svg" alt="javascript logo" class="w-10 h-10 mt-4">
-                    <p class="text-white">javascript</p>
-                </div>
-                <div class="grid place-content-center place-items-center">
-                    <img src="../img/vite-logo.svg" alt="Vite logo" class="w-10 h-10 mt-4 text-white">
-                    <p class="text-white">Vite</p>
-                </div>
-                <div class="grid place-content-center place-items-center">
-                    <img src="../img/tailwind-logo.svg" alt="TailwindCss logo" class="w-10 h-10 mt-4 text-white">
-                    <p class="text-white">TailwindCSS</p>
-                </div>
-                <div class="grid place-content-center place-items-center">
-                    <img src="../img/sass-logo.svg" alt="Sass logo" class="w-10 h-10 mt-4 text-white">
-                    <p class="text-white">Sass</p>
-                </div>
-                <div class="grid place-content-center place-items-center">
-                    <img src="../img/css-logo.svg" alt="CSS logo" class="w-10 h-10 mt-4 text-white">
-                    <p class="text-white">CSS3</p>
-                </div>
-                <div class="grid place-content-center place-items-center">
-                    <img src="../img/html-logo.svg" alt="html logo" class="w-10 h-10 mt-4 text-white">
-                    <p class="text-white">HTML5</p>
-                </div>
-                <div class="grid place-content-center place-items-center">
-                    <img src="../img/git-logo.svg" alt="github logo" class="w-10 h-10 mt-4 text-white">
-                    <p class="text-white">Github</p>
-                </div>
+            </div>
+            <div class="hidden w-full h-auto lg:flex flex-col items-center justify-center max-w-screen-lg">
+                <section id="section-about-me-desktop" class="text-center">
+                    <h2 class="text-primary font-bold text-lg mt-20" data-section="about-me"
+                        data-value="about-me-title">About Me
+                    </h2>
+                    <p class="text-white mt-4 text-sm font-light text-center px-8" data-section="about-me"
+                        data-value="introduction">I'm a Colombian developer who loves learning new things everyday. I'm
+                        actually
+                        studying Frontend development on the Platzi platform and I also won a schoolarship at Oracle
+                        Next Education
+                        to study Java, Spring and a course on soft skills. I love animals and I have a strong and
+                        professional
+                        knowledge on this area. During my free time I like playing musical instruments and running</p>
+                </section>
             </div>
         </section>
     </div>
 
-    <section id="section-about-me" class="w-full h-auto flex flex-col items-center">
+
+    <section id="section-about-me" class="w-full h-auto flex flex-col items-center max-w-screen-lg lg:hidden">
         <h2 class="text-primary font-bold text-lg mt-20" data-section="about-me" data-value="about-me-title">About Me
         </h2>
         <p class="text-white mt-4 text-sm font-light text-center px-8" data-section="about-me"
@@ -101,14 +130,15 @@
             knowledge on this area. During my free time I like playing musical instruments and running</p>
     </section>
 
-    <section id="section-projects" class="w-full h-auto flex flex-col items-center">
-        <h2 class="text-primary font-bold text-lg mt-20" data-section="projects" data-value="project-main-title">
+    <section id="section-projects" class="w-full h-auto flex flex-col items-center max-w-screen-xl lg:m-auto">
+        <h2 class="text-primary font-bold text-lg mt-20 mb-4 lg:text-2xl" data-section="projects"
+            data-value="project-main-title">
             Projects</h2>
-        <div class="flex flex-col w-full p-8">
+        <div class="flex flex-col w-full p-8 lg:border-t lg:border-t-primary lg:flex-row lg:h-96 lg:gap-8">
             <img src="../img/Shopi-home.png" alt="An image of the homepage of Shopi"
-                class="w-full border-t border-t-primary pt-4">
+                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none">
             <div class="mt-4">
-                <h3 class="text-primary font-semibold text-center">1. Shopi</h3>
+                <h3 class="text-primary font-semibold text-center lg:text-xl">1. Shopi</h3>
                 <p class="text-white mt-4 text-sm font-light text-center" data-section="projects"
                     data-value="first-project-description">This is an ecommerce website and it was builded with React
                     Vite.js and the style was done with TailwindCSS. This website is using a fake API and you can see
@@ -126,11 +156,11 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col w-full p-8">
+        <div class="flex flex-col w-full p-8 lg:border-t lg:border-t-primary lg:flex-row lg:h-[560px] lg:gap-8">
             <img src="../img/TODO-MACHINE.png" alt="An image of the homepage of Shopi"
-                class="w-full border-t border-t-primary pt-4">
+                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none">
             <div class="mt-4">
-                <h3 class="text-primary font-semibold text-center">2. Todo Machine</h3>
+                <h3 class="text-primary font-semibold text-center lg:text-xl">2. Todo Machine</h3>
                 <p class="text-white mt-4 text-sm font-light text-center" data-section="projects"
                     data-value="second-project-description">TODO MACHINE is an app created with React.js that let you
                     create a list of task about your daily life. You can add a new task and once you complete it you can
@@ -144,35 +174,36 @@
                         class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Repo</a>
                 </div>
             </div>
-            <div class="flex flex-col w-full p-8">
-                <img src="../img/Platzi-travel.png" alt="An image of the homepage of Shopi"
-                    class="w-full border-t border-t-primary pt-4">
-                <div class="mt-4">
-                    <h3 class="text-primary font-semibold text-center">3. Platzi Travel</h3>
-                    <p class="text-white mt-4 text-sm font-light text-center" data-section="projects"
-                        data-value="third-project-description">This is a project builded using Tailwind CSS.This project
-                        also has a feature in which you can change to dark mode just by clicking in the icon of the
-                        moon. Tailwind is a framework based in the concept of mobile first. And of course this project
-                        was builed carefully thinking about how it may look in a phone screen
-                    </p>
-                    <div class="flex items-center justify-center gap-6">
-                        <a href="https://developerleonardo.github.io/Curso-tailwind/"
-                            class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Demo</a>
-                        <a href="https://github.com/developerleonardo/Curso-tailwind"
-                            class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Repo</a>
-                    </div>
+        </div>
+        <div class="flex flex-col w-full p-8 lg:border-t lg:border-t-primary lg:flex-row lg:h-96 lg:gap-8">
+            <img src="../img/Platzi-travel.png" alt="An image of the homepage of Shopi"
+                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none">
+            <div class="mt-4">
+                <h3 class="text-primary font-semibold text-center lg:text-xl">3. Platzi Travel</h3>
+                <p class="text-white mt-4 text-sm font-light text-center" data-section="projects"
+                    data-value="third-project-description">This is a project builded using Tailwind CSS.This project
+                    also has a feature in which you can change to dark mode just by clicking in the icon of the
+                    moon. Tailwind is a framework based in the concept of mobile first. And of course this project
+                    was builed carefully thinking about how it may look in a phone screen
+                </p>
+                <div class="flex items-center justify-center gap-6">
+                    <a href="https://developerleonardo.github.io/Curso-tailwind/"
+                        class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Demo</a>
+                    <a href="https://github.com/developerleonardo/Curso-tailwind"
+                        class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Repo</a>
                 </div>
             </div>
+        </div>
     </section>
 
-    <footer id="section-contact" class="w-full h-40 bg-tertiary flex flex-col justify-center gap-2 px-8 mb-14">
+    <footer id="section-contact" class="w-full h-40 bg-tertiary flex flex-col justify-center gap-2 px-8 mb-14 lg:mb-0 lg:items-center">
         <h3 class="text-white font-medium" data-section="footer" data-value="footer-title">Contact me</h3>
         <a href="https://www.linkedin.com/in/leonardo-salazar-serna/"><img src="../img/linkedin-logo.svg"
                 alt="linkedin logo" class="w-10 h-10 flex gap-2"></a>
         <p class="text-white mt-4 text-sm font-light text-center" data-section="footer" data-value="footer-note">Or
             visit https://www.linkedin.com/in/leonardo-salazar-serna/</p>
     </footer>
-    <div class="w-full h-14 bg-tabBar backdrop-blur-md fixed bottom-0 flex items-center justify-center gap-6">
+    <div class="w-full h-14 bg-tabBar backdrop-blur-md fixed bottom-0 flex items-center justify-center gap-6 lg:hidden">
         <a href="#section-home">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6 text-secondary">
