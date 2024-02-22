@@ -1,0 +1,31 @@
+{
+    "profile": {
+        "greeting": "Hola, soy",
+        "name": "Leonardo",
+        "rol": "Desarrollador Frontend",
+        "description": "Radicado en Medellín, Colombia. Me apasiona crear y codificar páginas web hermosas y con un estilo único"
+    },
+    "cv": {
+        "download": "Descargar CV"
+    },
+    "projects-button": {
+        "button": "Ver proyectos"
+    },
+    "technologies": {
+        "technologies-title": "Tecnologías"
+    },
+    "about-me": {
+        "about-me-title": "Acerca de mi",
+        "introduction": "Soy un desarrolador web colombiano que ama aprender cosas nuvas cada día. Actualmente estoy estudiando desarrollo frontend en Platzi y también gané una beca para estudiar java, sping y cursos de habilidades blandas en Oracle Next Education. Amo los animales y tengo conocimientos profesionales en esta área. En mis tiempos libres me gusta tocar instrumentos musicales y correr"
+    },
+    "projects": {
+        "project-main-title": "Proyectos",
+        "first-project-description": "Esta es una web de ecommerce que fue construida usando React.js con Vite y además fue estilizada usando TailwindCSS. Esta página web usa una fake API en donde podemos obtener todos los productos que esta contiene. Además es posible filtrar los productos por su categoría y nombre. Para navegar en el demo debes registrarte usando cualquier nombre de usuario y un email cualquiera. Por ejemplo podrías usar Pedro y usuario@ejemplo.com. Después de iniciar sesión podrás explorar todas las funcionalidades de este proyecto. IMPORTANTE: Una vez que abras el demo debes de dar click en el menú en el botón de sign in. Para más información por favor consulta el repositorio de este proyecto y sigue las instrucciones",
+        "second-project-description": "TODO MACHINE es una aplicación creada usando React.js que te permite crear una lista de tareas de actividades de tu vida cotidiana. Tú puedes añanir una nueva tarea y puedes marcarla como completada o eliminarla. Solo tienes que añadir tu lista de tareas y no vas a olvidar completar tus actividades.",
+        "third-project-description": "Este proyecto fue creado usando TailwindCSS. Esta página web tiene adicionalmente una funcionalidad de modo oscuro que puedes activar haciendo click sobre el ícono de la media luna. Tailwind es un framework basado en el concepto de mobile-first y esta aplicación fue creada cuidadosamente basada en el concepto de cómo podría verse en cualquier pantalla"
+    },
+    "footer": {
+        "footer-title": "Contáctame",
+        "footer-note": "O visita https://www.linkedin.com/in/leonardo-salazar-serna/"
+    }
+}

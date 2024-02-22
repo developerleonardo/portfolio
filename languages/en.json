@@ -1,0 +1,31 @@
+{
+    "profile": {
+        "greeting": "Hi, I'm",
+        "name": "Leonardo",
+        "rol": "Frontend Developer",
+        "description": "Based in Medellin, Colombia. I'm passionate about creating and coding beautiful and unique websites"
+    },
+    "cv": {
+        "download": "Download CV"
+    },
+    "projects-button": {
+        "button": "See my projects"
+    },
+    "technologies": {
+        "technologies-title": "Technologies"
+    },
+    "about-me": {
+        "about-me-title": "About Me",
+        "introduction": "I'm a Colombian developer who loves learning new things everyday. I'm actually studying Frontend development on the Platzi platform and I also won a schoolarship at Oracle Next Education to study Java, Spring and a course on soft skills. I love animals and I have a strong and professional knowledge on this area. During my free time I like playing musical instruments and running"
+    },
+    "projects": {
+        "project-main-title": "Projects",
+        "first-project-description": "This is an ecommerce website and it was builded with React Vite.js and the style was done with TailwindCSS. This website is using a fake API and you can see all the products on it. Also it is possible to filter the products by category and by name. To navigate through all the application you should sign up by using any username and any email. For example you can type Michael and username@example.com. After doing this you can explote all the features of this project. IMPORTANT: once you open the demo, click on the menu and then click on sign in. For more information please visit the repo and follow the instructions",
+        "second-project-description": "TODO MACHINE is an app created with React.js that let you create a list of task about your daily life. You can add a new task and once you complete it you can either marke it as completed or you can delete it and add a new task. You will only need to write your daily To-Do itinerary and you will not miss anything at the end of the day/month",
+        "third-project-description": "This is a project builded using Tailwind CSS.This project also has a feature in which you can change to dark mode just by clicking in the icon of the moon. Tailwind is a framework based in the concept of mobile first. And of course this project was builed carefully thinking about how it may look in a phone screen"
+    },
+    "footer": {
+        "footer-title": "Contact me",
+        "footer-note": "Or visit https://www.linkedin.com/in/leonardo-salazar-serna/"
+    }
+}
