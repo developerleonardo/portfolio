@@ -11,7 +11,8 @@ module.exports = {
       "primary": "#00F7FF",
       "secondary": "#23CFD5",
       "tertiary": "#407D80",
-      "tabBar": "#ffffff08"
+      "tabBar": "#ffffff08",
+      "dark": "#161616"
     },
     extend: {
       backgroundImage: {
