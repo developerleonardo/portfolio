@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page shows my projects as a front-end developer and my contact information">
+    <meta name="keywords" content="portfolio, developer, front-end, react">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Portfolio front-end Leonardo">
+    <meta property="og:description" content="Page with my projects as a front-end developer and contact information">
+    <meta property="og:image" content="https://gcdnb.pbrd.co/images/E5YlUFVbMoai.png?o=1">
+    <meta property="og:url" content="https://portfolio-leonardo-frontend.netlify.app/">
     <link rel="stylesheet" href="./css/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,8 +70,8 @@
 
         <figure class="w-40 h-40 rounded-full mt-8 md:w-60 md:h-60 lg:w-1/3 lg:flex lg:justify-center lg:items-center">
             <img class="rounded-full w-full h-full object-cover object-top lg:hidden"
-                src="./img/ProfilePictureMobile.jpg" alt="profile picture of me">
-            <img class="hidden lg:flex" src="./img/profilePicture.png" alt="profile picture of me">
+                src="./img/ProfilePictureMobile.jpg" alt="profile picture of me" loading="lazy">
+            <img class="hidden lg:flex" src="./img/profilePicture.png" alt="profile picture of me" loading="lazy">
         </figure>
 
         <section class="w-full flex flex-col items-center px-4 lg:w-1/3 lg:p-8">
@@ -105,6 +112,10 @@
                         <img src="./img/git-logo.svg" alt="github logo" class="w-10 h-10 mt-4 text-white">
                         <p class="text-white">Github</p>
                     </div>
+                    <div class="grid place-content-center place-items-center">
+                        <img src="./img/figma-logo.svg" alt="github logo" class="w-10 h-10 mt-4 text-white">
+                        <p class="text-white">Figma</p>
+                    </div>
                 </div>
             </div>
             <div class="hidden w-full h-auto lg:flex flex-col items-center justify-center max-w-screen-lg">
@@ -113,12 +124,11 @@
                         data-value="about-me-title">About Me
                     </h2>
                     <p class="text-white mt-4 text-sm font-light text-center px-8" data-section="about-me"
-                        data-value="introduction">I'm Leonardo, a dedicated Colombian frontend developer with a passion for continuous learning. Currently, I'm enhancing my skills through the Platzi platform and have recently completed my specialization in frontend development with a scholarship from Oracle Next Education, where I also focused on soft skills. My professional expertise is complemented by a love for animals and I have a professional knowledge on this field, and in my free time, I enjoy playing musical instruments and exploring photography. My commitment to growth and creativity drives my pursuit of excellence in every project I undertake.</p>
+                        data-value="introduction">I'm Leonardo, a Colombian frontend developer passionate about continuous learning. I've specialized in frontend development, thanks to a scholarship from Oracle Next Education, where I also developed soft skills. Beyond tech, I have a deep love and professional knowledge of animals, and I enjoy playing musical instruments and exploring photography in my free time. My dedication to growth and creativity fuels my drive for excellence in every project.</p>
                 </section>
             </div>
         </section>
     </div>
-
 
     <section id="section-about-me" class="w-full h-auto flex flex-col items-center max-w-screen-lg lg:hidden">
         <h2 class="text-primary font-bold text-lg mt-20" data-section="about-me" data-value="about-me-title">About Me
@@ -134,9 +144,9 @@
         <h2 class="text-primary font-bold text-lg mt-20 mb-4 lg:text-2xl" data-section="projects"
             data-value="project-main-title">
             Projects</h2>
-        <div class="flex flex-col w-full p-8 lg:border-t lg:border-t-primary lg:flex-row lg:h-96 lg:gap-8">
+        <div class="flex flex-col w-full p-8 items-center justify-center lg:border-t lg:border-t-primary lg:flex-row lg:h-96 lg:gap-8">
             <img src="./img/Shopi-home.png" alt="An image of the homepage of Shopi"
-                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none">
+                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none" loading="lazy">
             <div class="mt-4">
                 <h3 class="text-primary font-semibold text-center lg:text-xl">1. Shopi</h3>
                 <p class="text-white mt-4 text-sm font-light text-center" data-section="projects"
@@ -156,9 +166,9 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col w-full p-8 lg:border-t lg:border-t-primary lg:flex-row lg:h-[560px] lg:gap-8">
+        <div class="flex flex-col w-full p-8 items-center justify-center lg:border-t lg:border-t-primary lg:flex-row lg:h-[560px] lg:gap-8">
             <img src="./img/To-Do-Titan.png" alt="An image of the homepage of Shopi"
-                class="w-64 pt-4 border-t border-t-primary lg:border-none lg:w-56">
+                class="w-64 pt-4 border-t border-t-primary lg:border-none lg:w-56" loading="lazy">
             <div class="mt-4">
                 <h3 class="text-primary font-semibold text-center lg:text-xl">2. To-Do Titan</h3>
                 <p class="text-white mt-4 text-sm font-light text-center" data-section="projects"
@@ -172,9 +182,9 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col w-full p-8 lg:border-t lg:border-t-primary lg:flex-row lg:h-96 lg:gap-8">
+        <div class="flex flex-col w-full p-8 items-center justify-center lg:border-t lg:border-t-primary lg:flex-row lg:h-96 lg:gap-8">
             <img src="./img/Org.png" alt="An image of the homepage of Shopi"
-                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none">
+                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none" loading="lazy">
             <div class="mt-4">
                 <h3 class="text-primary font-semibold text-center lg:text-xl">3. Org</h3>
                 <p class="text-white mt-4 text-sm font-light text-center" data-section="projects"
@@ -188,9 +198,9 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col w-full p-8 lg:border-t lg:border-t-primary lg:flex-row lg:h-96 lg:gap-8">
+        <div class="flex flex-col w-full p-8 items-center justify-center lg:border-t lg:border-t-primary lg:flex-row lg:h-96 lg:gap-8">
             <img src="./img/text-encryptor.png" alt="An image of the application text encryptor"
-                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none">
+                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none" loading="lazy">
             <div class="mt-4">
                 <h3 class="text-primary font-semibold text-center lg:text-xl">4. Text encryptor</h3>
                 <p class="text-white mt-4 text-sm font-light text-center" data-section="projects"
@@ -200,6 +210,22 @@
                     <a href="https://developerleonardo.github.io/encriptador-de-texto/"
                         class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Demo</a>
                     <a href="https://github.com/developerleonardo/encriptador-de-texto"
+                        class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Repo</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col w-full p-8 lg:border-t lg:border-t-primary lg:flex-row lg:h-96 lg:gap-8">
+            <img src="./img/MindMaster-Quiz.AVIF" alt="An image of the application MindMaster Quiz"
+                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none" loading="lazy">
+            <div class="mt-4">
+                <h3 class="text-primary font-semibold text-center lg:text-xl">5. MindMaster Quiz</h3>
+                <p class="text-white mt-4 text-sm font-light text-center" data-section="projects"
+                    data-value="fifth-project-description">MindMaster Quiz is the ultimate challenge for every JavaScript enthusiast! Dive into a world of intriguing questions that will test your JavaScript skills to the limit. Whether you're a seasoned coder or just starting out, this app is your playground to prove your expertise. Compete with friends, and see who truly reigns supreme as the JavaScript King. Ready to master your mind? The challenge awaits! This application was made using javascript and the design was made using Figma.
+                </p>
+                <div class="flex items-center justify-center gap-6">
+                    <a href="https://developerleonardo.github.io/MindMaster-Quiz/"
+                        class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Demo</a>
+                    <a href="https://github.com/developerleonardo/MindMaster-Quiz"
                         class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Repo</a>
                 </div>
             </div>
