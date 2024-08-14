@@ -4,6 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page shows my projects as a front-end developer and my contact information">
+    <meta name="keywords" content="portfolio, developer, front-end, react">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Portfolio front-end Leonardo">
+    <meta property="og:description" content="Page with my projects as a front-end developer and contact information">
+    <meta property="og:image" content="https://gcdnb.pbrd.co/images/dentv5sQO331.png?o=1">
+    <meta property="og:url" content="https://portfolio-leonardo-frontend.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Leonardo's Portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio front-end Leonardo">
+    <meta name="twitter:description" content="Page with my projects as a front-end developer and contact information">
+    <meta name="twitter:image" content="https://gcdnb.pbrd.co/images/E5YlUFVbMoai.png?o=1">
     <link rel="stylesheet" href="./css/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,8 +76,8 @@
 
         <figure class="w-40 h-40 rounded-full mt-8 md:w-60 md:h-60 lg:w-1/3 lg:flex lg:justify-center lg:items-center">
             <img class="rounded-full w-full h-full object-cover object-top lg:hidden"
-                src="./img/ProfilePictureMobile.jpg" alt="profile picture of me">
-            <img class="hidden lg:flex" src="./img/profilePicture.png" alt="profile picture of me">
+                src="./img/ProfilePictureMobile.jpg" alt="profile picture of me" loading="lazy">
+            <img class="hidden lg:flex" src="./img/profilePicture.png" alt="profile picture of me" loading="lazy">
         </figure>
 
         <section class="w-full flex flex-col items-center px-4 lg:w-1/3 lg:p-8">
@@ -105,6 +118,10 @@
                         <img src="./img/git-logo.svg" alt="github logo" class="w-10 h-10 mt-4 text-white">
                         <p class="text-white">Github</p>
                     </div>
+                    <div class="grid place-content-center place-items-center">
+                        <img src="./img/figma-logo.svg" alt="github logo" class="w-10 h-10 mt-4 text-white">
+                        <p class="text-white">Figma</p>
+                    </div>
                 </div>
             </div>
             <div class="hidden w-full h-auto lg:flex flex-col items-center justify-center max-w-screen-lg">
@@ -113,12 +130,16 @@
                         data-value="about-me-title">About Me
                     </h2>
                     <p class="text-white mt-4 text-sm font-light text-center px-8" data-section="about-me"
-                        data-value="introduction">I'm a Colombian developer who loves learning new things everyday. I'm actually studying Frontend development on the Platzi platform and I also won a schoolarship at Oracle Next Education to specialize in Frontend development with a complete course about soft skills. I love animals and I have a strong and professional knowledge on this area. During my free time I like playing musical instruments and photography</p>
+                        data-value="introduction">I'm Leonardo, a Colombian frontend developer passionate about
+                        continuous learning. I've specialized in frontend development, thanks to a scholarship from
+                        Oracle Next Education, where I also developed soft skills. Beyond tech, I have a deep love and
+                        professional knowledge of animals, and I enjoy playing musical instruments and exploring
+                        photography in my free time. My dedication to growth and creativity fuels my drive for
+                        excellence in every project.</p>
                 </section>
             </div>
         </section>
     </div>
-
 
     <section id="section-about-me" class="w-full h-auto flex flex-col items-center max-w-screen-lg lg:hidden">
         <h2 class="text-primary font-bold text-lg mt-20" data-section="about-me" data-value="about-me-title">About Me
@@ -134,9 +155,10 @@
         <h2 class="text-primary font-bold text-lg mt-20 mb-4 lg:text-2xl" data-section="projects"
             data-value="project-main-title">
             Projects</h2>
-        <div class="flex flex-col w-full p-8 lg:border-t lg:border-t-primary lg:flex-row lg:h-96 lg:gap-8">
+        <div
+            class="flex flex-col w-full p-8 items-center justify-center lg:border-t lg:border-t-primary lg:flex-row lg:h-96 lg:gap-8">
             <img src="./img/Shopi-home.png" alt="An image of the homepage of Shopi"
-                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none">
+                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none" loading="lazy">
             <div class="mt-4">
                 <h3 class="text-primary font-semibold text-center lg:text-xl">1. Shopi</h3>
                 <p class="text-white mt-4 text-sm font-light text-center" data-section="projects"
@@ -156,56 +178,87 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col w-full p-8 lg:border-t lg:border-t-primary lg:flex-row lg:h-[560px] lg:gap-8">
-            <img src="./img/TODO-MACHINE.png" alt="An image of the homepage of Shopi"
-                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none">
+        <div
+            class="flex flex-col w-full p-8 items-center justify-center lg:border-t lg:border-t-primary lg:flex-row lg:h-[560px] lg:gap-8">
+            <img src="./img/To-Do-Titan.png" alt="An image of the homepage of Shopi"
+                class="w-64 pt-4 border-t border-t-primary lg:border-none lg:w-56" loading="lazy">
             <div class="mt-4">
-                <h3 class="text-primary font-semibold text-center lg:text-xl">2. Todo Machine</h3>
+                <h3 class="text-primary font-semibold text-center lg:text-xl">2. To-Do Titan</h3>
                 <p class="text-white mt-4 text-sm font-light text-center" data-section="projects"
-                    data-value="second-project-description">TODO MACHINE is an app created with React.js that let you
-                    create a list of task about your daily life. You can add a new tasks and once you complete it you can
-                    either marke it as completed or you can delete it and add a new task. You will only need to write
-                    your daily To-Do itinerary and you will not miss anything at the end of the day/month
+                    data-value="second-project-description">To-Do Titan is a powerful and intuitive task management app
+                    designed to streamline your daily life. Built with React, Vite.js, and TailwindCSS, To-Do Titan
+                    offers a seamless and efficient experience for organizing your tasks. With To-Do Titan, you can
+                    easily create, manage, and track your daily to-do lists. Add new tasks with ease, mark them as
+                    completed, or delete them as needed. Simply jot down your daily itinerary, and let To-Do Titan
+                    ensure you stay on top of everything throughout the day and month. Never miss a task again with
+                    To-Do Titan—your ultimate productivity companion.
                 </p>
                 <div class="flex items-center justify-center gap-6">
-                    <a href="https://developerleonardo.github.io/curso-react-intro/"
+                    <a href="https://developerleonardo.github.io/todo-titan/"
                         class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Demo</a>
-                    <a href="https://github.com/developerleonardo/curso-react-intro"
+                    <a href="https://github.com/developerleonardo/todo-titan"
                         class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Repo</a>
                 </div>
             </div>
         </div>
-        <div class="flex flex-col w-full p-8 lg:border-t lg:border-t-primary lg:flex-row lg:h-96 lg:gap-8">
-            <img src="./img/Platzi-travel.png" alt="An image of the homepage of Shopi"
-                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none">
+        <div
+            class="flex flex-col w-full p-8 items-center justify-center lg:border-t lg:border-t-primary lg:flex-row lg:h-96 lg:gap-8">
+            <img src="./img/Org.png" alt="An image of the homepage of Shopi"
+                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none" loading="lazy">
             <div class="mt-4">
-                <h3 class="text-primary font-semibold text-center lg:text-xl">3. Platzi Travel</h3>
+                <h3 class="text-primary font-semibold text-center lg:text-xl">3. Org</h3>
                 <p class="text-white mt-4 text-sm font-light text-center" data-section="projects"
-                    data-value="third-project-description">This is a project builded using Tailwind CSS.This project
-                    also has a feature in which you can change to dark mode just by clicking in the icon of the
-                    moon. Tailwind is a framework based in the concept of mobile first. And of course this project
-                    was builed carefully thinking about how it may look in a phone screen
+                    data-value="third-project-description">This is a project builded using React with create-react-app.
+                    <br> On this project you can add teams and new collaborators to your teams, you just have to fill
+                    one of the forms depending on what you want to add and you will see below the added team or
+                    collaborator. Besides you can customize the color of your teams, delete a collaborator and select
+                    your favorite collaborator.
                 </p>
                 <div class="flex items-center justify-center gap-6">
-                    <a href="https://developerleonardo.github.io/Curso-tailwind/"
+                    <a href="https://org-six-chi.vercel.app/"
                         class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Demo</a>
-                    <a href="https://github.com/developerleonardo/Curso-tailwind"
+                    <a href="https://github.com/developerleonardo/org"
                         class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Repo</a>
                 </div>
             </div>
         </div>
-        <div class="flex flex-col w-full p-8 lg:border-t lg:border-t-primary lg:flex-row lg:h-96 lg:gap-8">
+        <div
+            class="flex flex-col w-full p-8 items-center justify-center lg:border-t lg:border-t-primary lg:flex-row lg:h-96 lg:gap-8">
             <img src="./img/text-encryptor.png" alt="An image of the application text encryptor"
-                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none">
+                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none" loading="lazy">
             <div class="mt-4">
                 <h3 class="text-primary font-semibold text-center lg:text-xl">4. Text encryptor</h3>
                 <p class="text-white mt-4 text-sm font-light text-center" data-section="projects"
-                    data-value="fourth-project-description">This application can encrypt a text making it unreadable. You can send to someone the encrypted text and the other person can use the same application to read the secret message. The application only accepts lower case letters and it does not accept special characters. This project was done using javascript, CSS3 and HTML5
+                    data-value="fourth-project-description">This application can encrypt a text making it unreadable.
+                    You can send to someone the encrypted text and the other person can use the same application to read
+                    the secret message. The application only accepts lower case letters and it does not accept special
+                    characters. This project was done using javascript, CSS3 and HTML5
                 </p>
                 <div class="flex items-center justify-center gap-6">
                     <a href="https://developerleonardo.github.io/encriptador-de-texto/"
                         class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Demo</a>
                     <a href="https://github.com/developerleonardo/encriptador-de-texto"
+                        class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Repo</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col w-full p-8 lg:border-t lg:border-t-primary lg:flex-row lg:h-96 lg:gap-8">
+            <img src="./img/MindMaster-Quiz.AVIF" alt="An image of the application MindMaster Quiz"
+                class="w-full pt-4 lg:w-2/4 border-t border-t-primary lg:border-none" loading="lazy">
+            <div class="mt-4">
+                <h3 class="text-primary font-semibold text-center lg:text-xl">5. MindMaster Quiz</h3>
+                <p class="text-white mt-4 text-sm font-light text-center" data-section="projects"
+                    data-value="fifth-project-description">MindMaster Quiz is the ultimate challenge for every
+                    JavaScript enthusiast! Dive into a world of intriguing questions that will test your JavaScript
+                    skills to the limit. Whether you're a seasoned coder or just starting out, this app is your
+                    playground to prove your expertise. Compete with friends, and see who truly reigns supreme as the
+                    JavaScript King. Ready to master your mind? The challenge awaits! This application was made using
+                    javascript and the design was made using Figma.
+                </p>
+                <div class="flex items-center justify-center gap-6">
+                    <a href="https://developerleonardo.github.io/MindMaster-Quiz/"
+                        class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Demo</a>
+                    <a href="https://github.com/developerleonardo/MindMaster-Quiz"
                         class="flex font-medium text-secondary underline underline-offset-4 mt-6 justify-center items-center">Repo</a>
                 </div>
             </div>
